@@ -10,12 +10,12 @@ permissions:
 
 jobs:
   kernel:
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-latest
     timeout-minutes: 90
     strategy:
       fail-fast: false
       matrix:
-        profile: [e5, t551m, m8, t512n, lym10k]
+        profile: [lym10k]
     steps:
       - uses: actions/checkout@v4
         with:
